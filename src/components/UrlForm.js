@@ -61,7 +61,7 @@ export default function UrlForm() {
             </p>
             <div className="mt-1 flex items-center justify-between gap-3">
                 <a className="truncate text-lg font-bold text-blue-500 hover:underline"
-                    href={result.shortUrl}
+                    href={`https://${result.shortUrl}`}
                     target="_blank" rel="noreferrer">
                     {result.shortUrl}
                 </a>
