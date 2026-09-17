@@ -4,6 +4,10 @@ A sleek, responsive frontend for **Linkly**, a URL-shortening application. Built
 
 **Live demo:** [url-shortener-project-frontend-gray.vercel.app](https://url-shortener-project-frontend-gray.vercel.app/)
 
+## Preview
+
+![Linkly frontend preview](./public/linkly-preview.png)
+
 ## Features
 
 - Responsive, dark-themed interface with a clean grid background
