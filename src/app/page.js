@@ -3,5 +3,26 @@ import Navbar from "../components/Navbar";
 import UrlForm from "../components/UrlForm";
 
 export default function Home() {
-  return <div className="flex min-h-screen flex-col" id="top"><Navbar /><main className="relative flex flex-1 items-center overflow-hidden bg-[radial-gradient(circle_at_15%_15%,#27272a_0,transparent_28%),radial-gradient(circle_at_85%_80%,#18181b_0,transparent_32%),linear-gradient(135deg,#09090b_0%,#18181b_50%,#09090b_100%)] px-5 py-12 sm:px-6 sm:py-14"><div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.025)_1px,transparent_1px)] bg-[size:42px_42px]" /><section className="relative mx-auto -mt-8 w-full max-w-2xl text-center sm:-mt-12" id="shorten"><p className="mb-4 inline-flex rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm font-semibold text-zinc-300">Fast, clean, shareable links</p><h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">Turn long links into <span className="text-zinc-400">simple</span> ones.</h1><p className="mx-auto mt-4 max-w-lg text-base leading-7 text-zinc-400">Paste any URL and get a short link that is easy to share and remember.</p><div className="mx-auto mt-7 max-w-xl"><UrlForm /></div><p className="mt-4 text-sm text-zinc-500">No sign-up. Just paste, shorten, and share.</p></section></main><Footer /></div>;
+    return <div className="flex min-h-screen flex-col" id="top">
+        <Navbar />
+        <main className="relative flex flex-1 items-center overflow-hidden bg-[radial-gradient(circle_at_15%_15%,#27272a_0,transparent_28%),radial-gradient(circle_at_85%_80%,#18181b_0,transparent_32%),linear-gradient(135deg,#09090b_0%,#18181b_50%,#09090b_100%)] px-5 py-12 sm:px-6 sm:py-14">
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.025)_1px,transparent_1px)] bg-[size:42px_42px]" />
+            <section className="relative mx-auto -mt-8 w-full max-w-2xl text-center sm:-mt-12" id="shorten">
+                <p className="mb-4 inline-flex rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm font-semibold text-zinc-300">
+                    Fast, clean, shareable links
+                </p>
+                <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+                    Turn long links into <span className="text-zinc-400">simple</span> ones.</h1>
+                <p className="mx-auto mt-4 max-w-lg text-base leading-7 text-zinc-400">
+                    Paste any URL and get a short link that is easy to share and remember.
+                </p>
+                <div className="mx-auto mt-7 max-w-xl">
+                    <UrlForm /></div>
+                <p className="mt-4 text-sm text-zinc-500">
+                    No sign-up. Just paste, shorten, and share.
+                </p>
+            </section>
+        </main>
+        <Footer />
+    </div>;
 }
